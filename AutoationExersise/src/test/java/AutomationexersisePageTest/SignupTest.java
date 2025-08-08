@@ -20,7 +20,7 @@ import io.netty.handler.timeout.TimeoutException;
 
 public class SignupTest extends BaseClass {
 
-	@Test(enabled = false)
+	@Test()
 	public void TotestSignup() throws IOException {
 
 		PropertyFileUtilty putil = new PropertyFileUtilty();

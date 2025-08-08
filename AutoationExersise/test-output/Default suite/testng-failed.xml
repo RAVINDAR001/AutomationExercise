@@ -3,11 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="Automation.LogintTestPage.loginPageTest">
+        <methods>
+          <include name="beforeClassConfig"/>
+          <include name="ToTestLoginPage"/>
+          <include name="beforeSuiteConfig"/>
+          <include name="Afterclassconfig"/>
+          <include name="AftersuitConfig"/>
+        </methods>
+      </class> <!-- Automation.LogintTestPage.loginPageTest -->
       <class name="AutomationexersisePageTest.SignupTest">
         <methods>
           <include name="beforeClassConfig"/>
           <include name="beforeSuiteConfig"/>
+          <include name="Afterclassconfig"/>
           <include name="TotestSignup"/>
+          <include name="AftersuitConfig"/>
         </methods>
       </class> <!-- AutomationexersisePageTest.SignupTest -->
     </classes>

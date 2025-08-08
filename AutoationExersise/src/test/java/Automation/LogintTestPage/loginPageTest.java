@@ -1,4 +1,4 @@
-package AutomationexersisePageTest;
+package Automation.LogintTestPage;
 
 import static org.testng.Assert.assertEquals;
 
@@ -18,7 +18,7 @@ import PomRepoSitory.deleteaccount;
 
 public class loginPageTest extends BaseClass {
 
-	@Test()
+	@Test(dependsOnMethods = {"AutomationexersisePageTest.SignupTest.TotestSignup"})
 	public void ToTestLoginPage() throws IOException, InterruptedException {
 
 		WebDriverUtility wutil = new WebDriverUtility();
