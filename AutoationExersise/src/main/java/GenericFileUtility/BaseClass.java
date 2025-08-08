@@ -7,10 +7,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Reporter;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
+import PomRepoSitory.loginpagerepo;
 import PomRepoSitory.SignupPage;
+
 
 
 public class BaseClass {
@@ -23,6 +27,7 @@ public class BaseClass {
 	WebDriverUtility wutil1 =new WebDriverUtility(); 
 	public WebDriver driver = null;
 	SignupPage sp=new SignupPage(driver);
+	
 
 	@BeforeSuite(groups = {})
 	public void beforeSuiteConfig() {
@@ -48,6 +53,17 @@ public class BaseClass {
 		driver.get(URL);
 	Reporter.log("navigated to login page", true);
 
+	}
+	@AfterClass
+	public void Afterclassconfig() {
+		driver.quit();
+		Reporter.log("Browser close sucsessfully",true);
+		
+		
+	}
+	@AfterSuite
+	public void AftersuitConfig() {
+		Reporter.log("--database conectivity finish--");
 	}
 
 	

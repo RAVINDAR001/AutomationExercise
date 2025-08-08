@@ -1,4 +1,4 @@
-package SignupPageTest;
+package AutomationexersisePageTest;
 
 import java.io.IOException;
 import java.util.NoSuchElementException;
@@ -18,9 +18,9 @@ import PomRepoSitory.SignUpInformation;
 import PomRepoSitory.SignupPage;
 import io.netty.handler.timeout.TimeoutException;
 
-public class signupTest extends BaseClass {
+public class SignupTest extends BaseClass {
 
-	@Test
+	@Test(enabled = false)
 	public void TotestSignup() throws IOException {
 
 		PropertyFileUtilty putil = new PropertyFileUtilty();

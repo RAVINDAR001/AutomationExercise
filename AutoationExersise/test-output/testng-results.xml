@@ -27,15 +27,15 @@
     <groups>
     </groups>
     <test started-at="2025-08-07T23:27:16 IST" name="Default test" finished-at="2025-08-07T23:27:41 IST" duration-ms="24136">
-      <class name="SignupPageTest.signupTest">
-        <test-method is-config="true" signature="beforeSuiteConfig()[pri:0, instance:SignupPageTest.signupTest@510f3d34]" started-at="2025-08-07T23:27:16 IST" name="beforeSuiteConfig" finished-at="2025-08-07T23:27:16 IST" duration-ms="13" status="PASS">
+      <class name="AutomationexersisePageTest.SignupTest">
+        <test-method is-config="true" signature="beforeSuiteConfig()[pri:0, instance:AutomationexersisePageTest.SignupTest@510f3d34]" started-at="2025-08-07T23:27:16 IST" name="beforeSuiteConfig" finished-at="2025-08-07T23:27:16 IST" duration-ms="13" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[---Data base connection Estabilishes---]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeSuiteConfig -->
-        <test-method is-config="true" signature="beforeClassConfig()[pri:0, instance:SignupPageTest.signupTest@510f3d34]" started-at="2025-08-07T23:27:17 IST" name="beforeClassConfig" finished-at="2025-08-07T23:27:24 IST" duration-ms="7584" status="PASS">
+        <test-method is-config="true" signature="beforeClassConfig()[pri:0, instance:AutomationexersisePageTest.SignupTest@510f3d34]" started-at="2025-08-07T23:27:17 IST" name="beforeClassConfig" finished-at="2025-08-07T23:27:24 IST" duration-ms="7584" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser got launch]]>
@@ -45,7 +45,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- beforeClassConfig -->
-        <test-method signature="TotestSignup()[pri:0, instance:SignupPageTest.signupTest@510f3d34]" started-at="2025-08-07T23:27:24 IST" name="TotestSignup" finished-at="2025-08-07T23:27:41 IST" duration-ms="16479" status="PASS">
+        <test-method signature="TotestSignup()[pri:0, instance:AutomationexersisePageTest.SignupTest@510f3d34]" started-at="2025-08-07T23:27:24 IST" name="TotestSignup" finished-at="2025-08-07T23:27:41 IST" duration-ms="16479" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[sucsessfully click on signup link]]>
@@ -61,7 +61,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- TotestSignup -->
-      </class> <!-- SignupPageTest.signupTest -->
+      </class> <!-- AutomationexersisePageTest.SignupTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

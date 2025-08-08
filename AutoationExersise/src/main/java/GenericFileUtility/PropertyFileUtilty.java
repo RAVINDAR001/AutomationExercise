@@ -9,7 +9,7 @@ public class PropertyFileUtilty {
 	
 	public String ToReaddataFromProperty(String Key) throws IOException {
 		
-		FileInputStream fis= new FileInputStream("C:\\Users\\kumar\\eclipse-workspace\\AutoationExersise\\src\\test\\resources\\Data.properties");	
+		FileInputStream fis= new FileInputStream(".\\src\\test\\resources\\Data.properties");	
 			Properties prop=new Properties();
 			prop.load(fis);
 			
