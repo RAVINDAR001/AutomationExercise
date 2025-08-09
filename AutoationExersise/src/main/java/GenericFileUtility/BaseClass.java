@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import PomRepoSitory.loginpagerepo;
-import PomRepoSitory.SignupPage;
+import PomRepoSitory.HomePage;
 
 
 
@@ -26,7 +26,7 @@ public class BaseClass {
 	ExcelFileutility eutil=new ExcelFileutility();
 	WebDriverUtility wutil1 =new WebDriverUtility(); 
 	public WebDriver driver = null;
-	SignupPage sp=new SignupPage(driver);
+	HomePage hp=new HomePage(driver);
 	
 
 	@BeforeSuite(groups = {})

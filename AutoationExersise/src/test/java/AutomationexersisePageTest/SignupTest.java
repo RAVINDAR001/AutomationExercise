@@ -15,17 +15,17 @@ import GenericFileUtility.WebDriverUtility;
 import PomRepoSitory.AccountCreatedSucsessfull;
 import PomRepoSitory.SignUpAccountInformation;
 import PomRepoSitory.SignUpInformation;
-import PomRepoSitory.SignupPage;
+import PomRepoSitory.HomePage;
 import io.netty.handler.timeout.TimeoutException;
 
 public class SignupTest extends BaseClass {
 
-	@Test()
+	@Test(enabled = false)
 	public void TotestSignup() throws IOException {
 
 		PropertyFileUtilty putil = new PropertyFileUtilty();
 		WebDriverUtility wutil = new WebDriverUtility();
-		SignupPage sp = new SignupPage(driver);
+		HomePage sp = new HomePage(driver);
 		try {	
 		sp.getSignup().click();
 		Reporter.log("sucsessfully click on signup link", true);

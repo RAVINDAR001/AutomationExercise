@@ -5,10 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SignupPage {
+public class HomePage {
 
 	
-	public SignupPage(WebDriver driver) {
+	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -17,6 +17,21 @@ public class SignupPage {
 
 	public WebElement getSignup() {
 		return signup;
+	}
+	@FindBy(xpath = "//a[text()=\" Contact us\"]")
+	private WebElement contactUs;
+	
+	@FindBy(xpath = "//a[normalize-space()='Home']")
+	private WebElement homelink;
+	
+	
+	public WebElement getHomelink() {
+		return homelink;
+	}
+
+
+	public WebElement getContactUs() {
+		return contactUs;
 	}
 	
 }

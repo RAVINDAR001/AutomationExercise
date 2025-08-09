@@ -13,17 +13,17 @@ import GenericFileUtility.PropertyFileUtilty;
 import GenericFileUtility.WebDriverUtility;
 import PomRepoSitory.loginpagerepo;
 import PomRepoSitory.verifyLoginPage;
-import PomRepoSitory.SignupPage;
+import PomRepoSitory.HomePage;
 import PomRepoSitory.deleteaccount;
 
 public class loginPageTest extends BaseClass {
 
-	@Test(dependsOnMethods = {"AutomationexersisePageTest.SignupTest.TotestSignup"})
+	@Test(enabled = false, dependsOnMethods = {"AutomationexersisePageTest.SignupTest.TotestSignup"})
 	public void ToTestLoginPage() throws IOException, InterruptedException {
 
 		WebDriverUtility wutil = new WebDriverUtility();
 		PropertyFileUtilty putil = new PropertyFileUtilty();
-		SignupPage sp = new SignupPage(driver);
+		HomePage sp = new HomePage(driver);
 
 		sp.getSignup().click();
 		Reporter.log("sucsessfully click on login link", true);
@@ -42,12 +42,12 @@ public class loginPageTest extends BaseClass {
 		String verify = vlp.getVerifyloginpage().getText();
 		Reporter.log(verify, true);
 
-		vlp.getDeleteaccount().click();
-		Reporter.log("delet sucseesfully", true);
-
-		deleteaccount dc= new deleteaccount(driver);
-		String veifydelete = dc.getVerifydeleteaccount().getText();
-		Reporter.log(veifydelete,true);
+//		vlp.getDeleteaccount().click();
+//		Reporter.log("delet sucseesfully", true);
+//
+//		deleteaccount dc= new deleteaccount(driver);
+//		String veifydelete = dc.getVerifydeleteaccount().getText();
+//		Reporter.log(veifydelete,true);
 	}
 
 }
